@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {BsArrowRight} from 'react-icons/bs'
 import logo from "../assets/logo.svg";
 
 
@@ -40,8 +41,8 @@ const links = [
                 </li>
             ))}      
       </ul>
-      <button className='bg-blue-950 hover:bg-blue-800 rounded-lg w-fit py-2 px-6 text-white'>
-        <h1>Join our community</h1>
+      <button className='flex items-center bg-blue-950 hover:bg-blue-800 rounded-lg w-fit py-2 px-6 text-white'>
+        Join our community <BsArrowRight size={20} className='mx-2'/>
       </button>
 
       <div onClick={() => setNav(!nav)}className='cursor-pointer pr-4 z-10 text-white md:hidden'>
