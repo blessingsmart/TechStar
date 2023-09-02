@@ -1,11 +1,66 @@
-import React from 'react'
+import React, { useState } from 'react';
+import {FaBars, FaTimes} from 'react-icons/fa'
+import logo from "../assets/logo.svg";
 
-const Nav = () => {
+
+
+export const Nav = () => {
+
+  const [nav, setNav] = useState(false);
+  
+const links = [
+  {
+      id: 1,
+      link: "About Us",
+  },
+  {
+      id: 2,
+      link: "Communities",
+  },
+  {
+      id: 3,
+      link: "Event",
+  },
+  {
+      id: 4,   
+      link: "Blog",
+  },
+];
+
   return (
-    <div className='w-full h-10'>
-        <div className=''>nav</div>
-    </div>
-  )
-}
+    <div className='flex justify-between sm:px-20 items-center w-full h-16 bg-white fixed'>
+      <div className='flex items-center'>
+        <img src={logo} alt="mainlogo" className="h-10 mr-2" />
+      </div>
+      <ul className="hidden md:flex">
+            {links.map(({id, link}) => (
+                <li 
+                    key={id} className='px-4 cursor-pointer capitalize font-medium hover:text-blue-950 text-black hover:scale-105 duration-200'>
+                    <>{link} </>
+                </li>
+            ))}      
+      </ul>
+      <button className='bg-blue-950 hover:bg-blue-800 rounded-lg w-fit py-2 px-6 text-white'>
+        <h1>Join our community</h1>
+      </button>
 
-export default Nav
+      <div onClick={() => setNav(!nav)}className='cursor-pointer pr-4 z-10 text-white md:hidden'>
+            {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        </div>
+
+        {nav && (
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-green-600 to-lime-600">
+
+                {links.map(({id, link}) => (
+                    <li 
+                        key={id} className='px-4 cursor-pointer text-white capitalize py-6 text-4xl'>
+                        <>{link}</>
+                    </li>
+                ))} 
+            </ul>
+        )}
+    </div>
+  );
+};
+
+export default Nav;
