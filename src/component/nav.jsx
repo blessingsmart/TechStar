@@ -12,24 +12,28 @@ export const Nav = () => {
 const links = [
   {
       id: 1,
-      link: "About Us",
+      link: "Home",
   },
   {
       id: 2,
-      link: "Communities",
+      link: "About Us",
   },
   {
       id: 3,
+      link: "Communities",
+  },
+  {
+      id: 4,
       link: "Event",
   },
   {
-      id: 4,   
+      id: 5,   
       link: "Blog",
   },
 ];
 
   return (
-    <div className='flex justify-between sm:px-20 items-center w-full h-16 bg-white fixed'>
+    <div className='flex justify-between sm:px-20 px-10 items-center w-full h-16 bg-white fixed'>
       <div className='flex items-center'>
         <img src={logo} alt="mainlogo" className="h-10 mr-2" />
       </div>
@@ -41,16 +45,16 @@ const links = [
                 </li>
             ))}      
       </ul>
-      <button className='flex items-center bg-blue-950 hover:bg-blue-800 rounded-lg w-fit py-2 px-6 text-white'>
+      <button className='hidden md:flex items-center bg-blue-950 hover:bg-blue-800 rounded-lg w-fit py-2 px-6 text-white'>
         Join our community <BsArrowRight size={20} className='mx-2'/>
       </button>
 
-      <div onClick={() => setNav(!nav)}className='cursor-pointer pr-4 z-10 text-white md:hidden'>
+      <div onClick={() => setNav(!nav)}className='cursor-pointer z-20 text-black md:hidden'>
             {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
 
         {nav && (
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-green-600 to-lime-600">
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-br from-emerald-400 via-teal-400 to-blue-400">
 
                 {links.map(({id, link}) => (
                     <li 
