@@ -59,14 +59,14 @@ const Members = () => {
                 </div>
             </div>
             <div className='items-center flex flex-col'>
-                <div className='grid gap-20 grid-cols-3 py-10 items-center'>
+                <div className='grid grid-cols-3 gap-y-5 py-10 items-center'>
                     {member.map(({ id, src, title, content }) => (
                         <div
                         key={id}
                         className={`flex flex-col text-center items-center rounded-lg`}
                         >
                         <img src={src} alt="" className="w-4/5" />
-                        <p className="items-center text-sm font-bold">{title}</p>
+                        <p className="items-center mt-2 text-sm font-bold">{title}</p>
                         <p className="items-center text-xs">{content}</p>
                         </div>
                     ))}

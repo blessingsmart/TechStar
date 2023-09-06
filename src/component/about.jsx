@@ -48,9 +48,10 @@ const About = () => {
   return (
     <>
     <div className='flex flex-col px-20 h-full w-screen'>
-        <div className='flex flex-col py-10'>
-            <div className='text-black text-5xl font-semibold py-20'>
-                <span className='bg-indigo-50 mt-10'>What we do at</span><br/> tech star. <span className='text-xs font-semibold leading-none'>More than connecting tech enthusiasts</span>
+        <div className='flex flex-col py-10 place-items-end'>
+            <div className='relative text-black text-5xl font-semibold py-20'>
+                <div className='absolute bg-indigo-50 h-20 w-full top-12 z-10'></div>
+                <span className=' absolute z-20'>What we do at</span><br/> tech star. <span className='text-xs font-semibold leading-none'>More than connecting tech enthusiasts</span>
             </div>
             <div className='grid grid-cols-3 gap-x-7 gap-y-16'>
                 {niche.map(({ id, src, title, content }) => (
@@ -65,9 +66,9 @@ const About = () => {
                 ))}
             </div>
         </div>
-        <div className='grid grid-cols-2 justify-between gap-32 items-center mx-28'>
-            <img src={Smiling} alt="" className="h-4/5 w-4/5" />
-            <div className='flex flex-col h-80 py-10 justify-between'>
+        <div className='flex flex-col md:flex-row justify-between md:gap-32 items-center my-10 mx-28'>
+            <img src={Smiling} alt="" className="md:h-80 h-4/5" />
+            <div className='flex flex-col gap-10 py-10 justify-between'>
                     <p className='text-4xl font-semibold leading-tight'>We are here for you, your growth is something we do care about.</p>
                     <button className='flex items-center bg-blue-950 hover:bg-blue-800 rounded-lg w-fit py-2 px-6 text-white text-sm md:text-base'>
                             Join our community <BsArrowRight size={20} className='mx-2'/>

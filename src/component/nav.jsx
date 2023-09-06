@@ -33,7 +33,7 @@ const links = [
 ];
 
   return (
-    <div className='flex justify-between sm:px-20 px-10 items-center w-full h-16 bg-white fixed'>
+    <div className='flex justify-between sm:px-20 px-10 items-center w-full h-16 bg-white z-40 fixed'>
       <div className='flex items-center'>
         <img src={logo} alt="mainlogo" className="h-10 mr-2" />
       </div>
