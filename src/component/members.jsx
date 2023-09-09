@@ -1,5 +1,5 @@
 import React from 'react'
-import picture1 from '../assets/picture1.png'
+import picture from '../assets/picture.png'
 import picture2 from '../assets/picture2.png'
 import picture3 from '../assets/picture3.png'
 import picture4 from '../assets/picture4.png'
@@ -12,7 +12,7 @@ const Members = () => {
     const member = [
         {
           id: 1,
-          src: picture1,
+          src: picture,
           title: "Adegboye Opeyemi",
           content: "UI/UX Designer at microsoft.dreaming.com Nigeria",
         },
