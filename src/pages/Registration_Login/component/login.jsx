@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../component/nav'
+import Nav from '../../Home Page/component/nav'
 import FigmaIcon from '/images/figma.png'
 import Git from '/images/git.jpg'
 import Gmail from '/images/gmail.png'

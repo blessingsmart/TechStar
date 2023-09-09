@@ -1,6 +1,6 @@
 import React from 'react'
-import Community from '../assets/community.png'
-import Smiling from '../assets/smiling.png'
+import Community from '../../../../src/assets/community.png'
+import Smiling from '../../../../src/assets/smiling.png'
 import {BsArrowRight} from 'react-icons/bs'
 
 const About = () => {

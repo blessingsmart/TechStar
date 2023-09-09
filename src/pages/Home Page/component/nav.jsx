@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {BsArrowRight} from 'react-icons/bs'
-import logo from "../assets/logo.svg";
+import logo from "../../../../src/assets/logo.svg";
 
 
 

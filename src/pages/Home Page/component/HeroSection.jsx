@@ -1,7 +1,7 @@
-import heroimg1 from "../../../src/assets/heroimg1.svg";
-import heroimg2 from "../../../src/assets/heroimg2.svg";
-import heroimg3 from "../../../src/assets/heroimg3.svg";
-import heroimg4 from "../../../src/assets/heroimg4.svg";
+import heroimg1 from "../../../../src/assets/heroimg1.svg";
+import heroimg2 from "../../../../src/assets/heroimg2.svg";
+import heroimg3 from "../../../../src/assets/heroimg3.svg";
+import heroimg4 from "../../../../src/assets/heroimg4.svg";
 
 const HeroSection = () => {
   return (

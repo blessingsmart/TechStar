@@ -1,10 +1,10 @@
 import React, { lazy } from "react";
-import Loading from "../src/component/loading";
+import Loading from "./pages/Home Page/component/loading";
 import { createBrowserRouter } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/Home Page/Home"));
-const Login = lazy(() => import("./pages/login"));
-const Signup  = lazy(() => import("./pages/signup"));
+const Login = lazy(() => import("./pages/Registration_Login/component/login"));
+const Signup  = lazy(() => import("./pages/Registration_Login/component/signup"));
 
 const BrowserRouter = createBrowserRouter([
     {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../component/nav'
+import Nav from '../../Home Page/component/nav'
 
 const Signup = () => {
   return (

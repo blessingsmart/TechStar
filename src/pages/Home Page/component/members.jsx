@@ -1,9 +1,9 @@
 import React from 'react'
-import picture2 from '../assets/picture2.png'
-import picture3 from '../assets/picture3.png'
-import picture4 from '../assets/picture4.png'
-import picture5 from '../assets/picture5.png'
-import picture6 from '../assets/picture6.png'
+import picture2 from '../../../../src/assets/picture2.png'
+import picture3 from '../../../../src/assets/picture3.png'
+import picture4 from '../../../../src/assets/picture4.png'
+import picture5 from '../../../../src/assets/picture5.png'
+import picture6 from '../../../../src/assets/picture6.png'
 import {BsArrowRight} from 'react-icons/bs'
 
 const Members = () => {
